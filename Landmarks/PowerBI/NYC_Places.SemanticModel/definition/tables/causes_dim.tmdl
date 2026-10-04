@@ -1,0 +1,42 @@
+table causes_dim
+	lineageTag: 790609f4-c2c7-497f-af1e-3c9e84aecf48
+
+	column loc_cause_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 301ff9ab-40fd-40e8-b924-effa1167fd57
+		summarizeBy: sum
+		sourceColumn: loc_cause_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loc_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 20e1fbbb-30c1-4b8a-af1a-4688c8b8f4c0
+		summarizeBy: none
+		sourceColumn: loc_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cause
+		dataType: string
+		lineageTag: 5791f865-4838-4901-9030-ae306593b42f
+		summarizeBy: none
+		sourceColumn: cause
+
+		annotation SummarizationSetBy = Automatic
+
+	partition causes_dim = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost:5432", "nycmap"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "nyc_locations_cause_dim"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

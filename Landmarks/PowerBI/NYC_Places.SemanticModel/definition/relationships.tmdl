@@ -1,0 +1,10 @@
+relationship 0fafa3d2-eb52-a457-fe5a-7739077f13ea
+	crossFilteringBehavior: bothDirections
+	fromColumn: nyc_locations_fact.Category
+	toColumn: location_icons_dim.Category
+
+relationship AutoDetected_3531d7bd-5c29-444d-8f39-df8f46727a08
+	crossFilteringBehavior: bothDirections
+	fromColumn: causes_dim.loc_id
+	toColumn: nyc_locations_fact.loc_id
+

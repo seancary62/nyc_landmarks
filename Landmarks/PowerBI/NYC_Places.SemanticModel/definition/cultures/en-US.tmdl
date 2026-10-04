@@ -1,0 +1,1967 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "enhanced NYC landmarks data with popularity tiers": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "enhanced NYC landmark data with popularity tier": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.borough": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Borough"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "borough": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "constituency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "township": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "VariationSource": "DESIG_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desig date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "VariationSource": "DESIG_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desig year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "desig yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "desig moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "desig period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "VariationSource": "DESIG_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desig quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "desig qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "desig moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "desig period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "VariationSource": "DESIG_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desig month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "desig mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "desig moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "desig period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "VariationSource": "DESIG_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desig day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desig moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "desig period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Latitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "freedom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "autonomy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "liberty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "scope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Longitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "longitude": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Shape_Area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "shape area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Shape_Area": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "area": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "shape region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "shape locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "shape locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "shape neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "shape district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "shape continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "NTAName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "neighborhood": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "vicinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "proximity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "community": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "desig_date_hierarchies_have_desig_months"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "desig_date_hierarchies_have_desig_quarters"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "desig_date_hierarchies_have_desig_years"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "desig_dates_have_desig_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_inverse_popularity": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_inverse_popularities"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_popularity_tier1": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_popularity_tiers"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_popularity_tier": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_popularity_tiers1"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_neighborhood": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_neighborhoods"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.category": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_categories"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_shape_area": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_shape_areas"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Adjectives": [
+			              {
+			                "large": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "big": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "small": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "shape_area_indicates_how_large_enhanced_NYC_landmarks_data_with_popularity_tiers_are"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_shape_leng": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_shape_lengs"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_nta_2020": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_nta_2020"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_bct_2020": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_bct_2020"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_longitudes"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_latitudes"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_council": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.council": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.council"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.council"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_councils"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_cd": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.cd": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.cd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.cd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_cd"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_report_url": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_report_urls"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_type": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_types"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_desig_date": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_desig_dates"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_name_2": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_name_2"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_site_status": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_site_statuses"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_site_desc": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_site_descs"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lp_number": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lp_numbers"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_name": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_names"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_bbl": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_bbls"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_desig_address": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_desig_addresses"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lot": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lot": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lot"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lot"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lots"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_block": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.block": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.block"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.block"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_blocks"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_borough": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.borough": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.borough"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.borough"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_boroughs"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_objectid": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_objectids"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_in_desig_address": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_are_in_desig_addresses"
+			        }
+			      ]
+			    },
+			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			          }
+			        },
+			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day": {
+			          "Target": {
+			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "desig_date_hierarchies_have_desig_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

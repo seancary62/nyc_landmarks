@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 951.32825700000012,
+            "y": 615.09712800000011
+          },
+          "nodeIndex": "nyc_locations_fact",
+          "nodeLineageTag": "069acf4a-9b42-4ca8-98ef-83e2e863a067",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 516,
+            "y": 456.75
+          },
+          "nodeIndex": "location_icons_dim",
+          "nodeLineageTag": "3199a433-6d10-41f8-9873-f5713175a9e5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1154.9369310000002,
+            "y": 271.008732
+          },
+          "nodeIndex": "causes_dim",
+          "nodeLineageTag": "790609f4-c2c7-497f-af1e-3c9e84aecf48",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 427.02069200000005,
+            "y": 272.203319
+          },
+          "nodeIndex": "nyc_boundaries_dim",
+          "nodeLineageTag": "51bc36db-051f-456d-9ed2-c1ed67315db8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 56.447393005377734,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

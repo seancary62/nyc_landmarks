@@ -1,0 +1,69 @@
+table location_icons_dim
+	lineageTag: 3199a433-6d10-41f8-9873-f5713175a9e5
+
+	/// Category icon as an SVG data URI for the logo legend tooltip
+	measure 'Legend Icon' =
+			VAR _svg = SELECTEDVALUE ( location_icons_dim[Icon] )
+			RETURN
+			    IF ( NOT ISBLANK ( _svg ), "data:image/svg+xml;utf8," & SUBSTITUTE ( _svg, "#", "%23" ) )
+		dataCategory: ImageUrl
+
+	/// Text for the hoverable logo legend button on Page 1
+	measure 'Legend Button Label' = "ⓘ  Legend"
+
+	column Category
+		dataType: string
+		lineageTag: 99dacbef-8d90-4a99-b77a-bd6aef30da15
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Icon
+		dataType: string
+		lineageTag: 82e9057d-50fa-4070-8339-98c9668ae405
+		summarizeBy: none
+		sourceColumn: Icon
+
+		annotation SummarizationSetBy = Automatic
+
+	column Author
+		dataType: string
+		lineageTag: a924548d-e3dc-4d04-9866-379ea6036bd1
+		summarizeBy: none
+		sourceColumn: Author
+
+		annotation SummarizationSetBy = Automatic
+
+	column License
+		dataType: string
+		lineageTag: 59e603c3-2d3b-48a7-b20c-f5df6c4b6b90
+		summarizeBy: none
+		sourceColumn: License
+
+		annotation SummarizationSetBy = Automatic
+
+	column Collection
+		dataType: string
+		lineageTag: b71e0d54-04d5-417d-ab8a-41c4e0d1cddf
+		summarizeBy: none
+		sourceColumn: Collection
+
+		annotation SummarizationSetBy = Automatic
+
+	partition location_icons_dim = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\seanc\Documents\fuck_onedrive_projects\nyc_landmarks\Landmarks\source_csvs\nyc_landmarks_logos.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed column type", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Category", type text}, {"Icon", type text}, {"Author", type text}, {"License", type text}, {"Collection", type text}})
+				in
+				  #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
