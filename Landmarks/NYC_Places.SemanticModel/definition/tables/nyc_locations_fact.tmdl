@@ -1,0 +1,216 @@
+table nyc_locations_fact
+	lineageTag: 069acf4a-9b42-4ca8-98ef-83e2e863a067
+
+	measure 'Selected Location' =
+			
+			VAR _Hood = SELECTEDVALUE ( 'nyc_locations_fact'[NTAName] )
+			VAR _Boro = SELECTEDVALUE ( 'nyc_locations_fact'[Borough] )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        NOT ISBLANK ( _Hood ), _Hood,
+			        NOT ISBLANK ( _Boro ), _Boro,
+			        "Multiple"
+			    )
+		lineageTag: fc0439cf-f6ba-42b7-9577-c76d4a0dcd5b
+
+	measure Location_Count = DISTINCTCOUNT(nyc_locations_fact[loc_id])
+		formatString: 0
+		lineageTag: e20d8564-437f-48a5-a704-0487a96ba775
+
+	measure Location_Count_All =
+			
+			CALCULATE(
+			    [Location_Count],
+			    ALL(nyc_locations_fact))
+		formatString: 0
+		lineageTag: 87b8e573-64cb-4f36-bf2b-0beaa7a3b110
+
+	measure '% Locations' = DIVIDE([Location_Count], [Location_Count_All],0)
+		lineageTag: e0da925c-9bc7-41ed-b82a-cfa1eac7f4b4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Excluded_Location_Count = [Location_Count_All] - [Location_Count]
+		formatString: 0
+		lineageTag: 53b569fb-5b7e-4c38-8167-fa9e07ff693a
+
+	column Borough
+		dataType: string
+		lineageTag: 287b5376-ad82-43bd-9c8f-36b6a8efe92c
+		summarizeBy: none
+		sourceColumn: Borough
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: double
+		lineageTag: 242d02b8-5808-4ee1-b933-60197587fae8
+		summarizeBy: sum
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Longitude
+		dataType: double
+		lineageTag: f850b3fa-d735-4705-990d-84b0a7cc1e81
+		summarizeBy: sum
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Shape_Area
+		dataType: double
+		lineageTag: f4084104-c73a-46be-b25e-0be69447fa5d
+		summarizeBy: sum
+		sourceColumn: Shape_Area
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Category
+		dataType: string
+		lineageTag: 2dddca50-fb65-41be-995e-586b3b431b56
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column NTAName
+		dataType: string
+		lineageTag: f06fec21-be3a-4614-a9c7-c046c163a048
+		summarizeBy: none
+		sourceColumn: NTAName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location Name'
+		dataType: string
+		lineageTag: 716402cc-d2ab-4b17-a00a-e5c97e68f1fd
+		summarizeBy: none
+		sourceColumn: Location Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 197b0197-db3b-4e49-bcbd-cd91f926f52a
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column wiki_title
+		dataType: string
+		lineageTag: 0fa2107f-f361-412c-85c1-873f2ba3dbba
+		summarizeBy: none
+		sourceColumn: wiki_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column wiki_url
+		dataType: string
+		lineageTag: e23c6789-4fd8-4288-a2a6-1631358eeddc
+		summarizeBy: none
+		sourceColumn: wiki_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column confidence
+		dataType: string
+		lineageTag: 4be5050a-7969-457b-8d1b-1d9c447868b3
+		summarizeBy: none
+		sourceColumn: confidence
+
+		annotation SummarizationSetBy = Automatic
+
+	column pageviews
+		dataType: double
+		lineageTag: 821c8380-0b7a-4b53-886c-68d452359bc7
+		summarizeBy: sum
+		sourceColumn: pageviews
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column score
+		dataType: double
+		lineageTag: 945711ba-256f-4951-bbeb-a62a83f1efe9
+		summarizeBy: sum
+		sourceColumn: score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Dataset
+		dataType: string
+		lineageTag: e80e9002-073f-4265-83b0-28c487cf872b
+		summarizeBy: none
+		sourceColumn: Dataset
+
+		annotation SummarizationSetBy = Automatic
+
+	column Routes
+		dataType: string
+		lineageTag: 7bd9562b-0764-4fdb-923f-c352dee229ec
+		summarizeBy: none
+		sourceColumn: Routes
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_rank
+		dataType: double
+		lineageTag: abd7d41c-f907-45b2-9609-7d02ec3a6631
+		summarizeBy: sum
+		sourceColumn: area_rank
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loc_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f084aa22-19f8-4091-9b4e-49ec552b23ad
+		summarizeBy: none
+		sourceColumn: loc_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Custom
+		dataType: string
+		lineageTag: a4cffd2c-3255-4526-8ff4-7d1652c25015
+		summarizeBy: none
+		sourceColumn: Custom
+
+		annotation SummarizationSetBy = Automatic
+
+	partition nyc_locations_fact = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost:5432", "nycmap"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "nyc_locations"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(#"Navigation 1", {{"Neighborhood", "NTAName"}, {"Category", "Category Old"}}),
+				  #"Inserted conditional column" = Table.AddColumn(#"Renamed Columns", "Category", each if [Type] = "Subway Station" then "Subway" else [Category Old]),
+				  #"Removed columns" = Table.RemoveColumns(#"Inserted conditional column", {"Category Old"}),
+				  #"Replaced value" = Table.ReplaceValue(#"Removed columns", "BK", "Brooklyn", Replacer.ReplaceText, {"Borough"}),
+				  #"Replaced value 1" = Table.ReplaceValue(#"Replaced value", "MN", "Manhattan", Replacer.ReplaceText, {"Borough"}),
+				  #"Replaced value 2" = Table.ReplaceValue(#"Replaced value 1", "QN", "Queens", Replacer.ReplaceText, {"Borough"}),
+				  #"Replaced value 3" = Table.ReplaceValue(#"Replaced value 2", "BX", "Bronx", Replacer.ReplaceText, {"Borough"}),
+				  #"Replaced value 4" = Table.ReplaceValue(#"Replaced value 3", "SI", "Staten Island", Replacer.ReplaceText, {"Borough"}),
+				  #"Inserted conditional column 1" = Table.AddColumn(#"Replaced value 4", "Custom", each if [confidence] = "low" then null else [wiki_url])
+				in
+				  #"Inserted conditional column 1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,45 @@
+table interests_dim
+	lineageTag: 790609f4-c2c7-497f-af1e-3c9e84aecf48
+
+	column loc_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 20e1fbbb-30c1-4b8a-af1a-4688c8b8f4c0
+		summarizeBy: none
+		sourceColumn: loc_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loc_interest_id
+		dataType: int64
+		formatString: 0
+		lineageTag: bf273142-1051-4d1d-8a4a-1a4fd89aaa83
+		summarizeBy: sum
+		sourceColumn: loc_interest_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column interest
+		dataType: string
+		lineageTag: a2994ffe-b7cf-4d68-8aaa-9d4c606456fd
+		summarizeBy: none
+		sourceColumn: interest
+
+		annotation SummarizationSetBy = Automatic
+
+	partition interests_dim = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost:5432", "nycmap"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "nyc_locations_interest_dim"]}[Data],
+				  #"Replaced value" = Table.ReplaceValue(#"Navigation 1", "_", " ", Replacer.ReplaceText, {"interest"}),
+				  #"Capitalized each word" = Table.TransformColumns(#"Replaced value", {{"interest", each Text.Proper(_), type nullable text}}),
+				  #"Replaced value 1" = Table.ReplaceValue(#"Capitalized each word", "Lgbtq", "LGBTQ+", Replacer.ReplaceText, {"interest"})
+				in
+				  #"Replaced value 1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

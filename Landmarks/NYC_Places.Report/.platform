@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "NYC_Places"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7076f34a-2f72-490f-bb63-b6487f49fa65"
+  }
+}

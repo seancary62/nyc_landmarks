@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "2f4521aca5fa40573ccd",
+  "position": {
+    "x": 9.78266061619298,
+    "y": 0,
+    "z": 0,
+    "height": 550.274659660855,
+    "width": 929.352758538333,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nyc_locations_fact"
+                    }
+                  },
+                  "Property": "loc_id"
+                }
+              },
+              "queryRef": "nyc_locations_fact.loc_id",
+              "nativeQueryRef": "loc_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nyc_locations_fact"
+                    }
+                  },
+                  "Property": "Category"
+                }
+              },
+              "queryRef": "nyc_locations_fact.Category",
+              "nativeQueryRef": "Category"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nyc_locations_fact"
+                    }
+                  },
+                  "Property": "Location Name"
+                }
+              },
+              "queryRef": "nyc_locations_fact.Location Name",
+              "nativeQueryRef": "Location Name"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "nyc_locations_fact"
+                  }
+                },
+                "Property": "Location Name"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
