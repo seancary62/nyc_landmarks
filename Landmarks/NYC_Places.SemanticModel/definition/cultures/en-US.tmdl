@@ -5,7 +5,7 @@ cultureInfo en-US
 			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			    "nyc_locations_fact": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact"
@@ -14,20 +14,146 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "enhanced NYC landmarks data with popularity tiers": {
+			          "nyc locations fact": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "enhanced NYC landmark data with popularity tier": {
+			          "nyc location fact": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.78
 			          }
+			        },
+			        {
+			          "nyc_locations_fact": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "locations fact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location fact": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "nyc location statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nyc location element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nyc location information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nyc location statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "location statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "location element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "location information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "location statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "nyc location detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nyc location circumstance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.borough": {
+			    "nyc_locations_fact.borough": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
@@ -103,70 +229,151 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			    "nyc_locations_fact.confidence": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
-			          "VariationSource": "DESIG_DATE",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
+			          "ConceptualProperty": "confidence"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "desig date hierarchy": {
+			          "confidence": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "date hierarchy": {
+			          "sureness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "assurance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "buoyancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "coolness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "self-assurance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "self-confidence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "poise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "self-reliance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "certainty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "conviction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.wiki_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "wiki_url"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wiki url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wiki_url": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "url": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "nyc_locations_fact",
-			          "VariationSource": "DESIG_DATE",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "desig year": {
-			            "State": "Generated"
-			          }
 			        },
 			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "desig yr": {
+			          "wiki website": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -176,7 +383,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "yr": {
+			          "website": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -186,147 +393,86 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "desig moment year": {
+			          "wiki site": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "desig period year": {
+			          "site": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "wiki web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        },
+			        {
+			          "Link": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter": {
+			    "nyc_locations_fact.wiki_title": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
-			          "VariationSource": "DESIG_DATE",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
+			          "ConceptualProperty": "wiki_title"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "desig quarter": {
+			          "wiki title": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date qtr": {
+			          "wiki_title": {
 			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.846
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "desig qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "desig moment quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "desig period quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "nyc_locations_fact",
-			          "VariationSource": "DESIG_DATE",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "desig month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "desig mth": {
+			          "wiki designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -336,7 +482,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "mth": {
+			          "designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -346,79 +492,326 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "desig moment month": {
+			          "wiki name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "desig period month": {
+			          "wiki award": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "wiki call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "wiki heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "wiki label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Wikipedia Article": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day": {
+			    "nyc_locations_fact.type": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
-			          "VariationSource": "DESIG_DATE",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
+			          "ConceptualProperty": "Type"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "desig day": {
+			          "type": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig date day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "desig moment day": {
+			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "desig period day": {
+			          "manner": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude": {
+			    "nyc_locations_fact.location_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Location Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "location title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "location label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "location tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.latitude": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
@@ -523,18 +916,18 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "location": {
+			          "position": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.466
+			            "Weight": 0.452
 			          }
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude": {
+			    "nyc_locations_fact.longitude": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
@@ -550,7 +943,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area": {
+			    "nyc_locations_fact.shape_area": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
@@ -679,10 +1072,1603 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.category": {
+			    "nyc_locations_fact.category": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.NTA_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "NTAName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NTA name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NTAName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "NTA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nta nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "nta title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "nta label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "nta tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Neighborhood": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.pageview": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "pageviews"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pageview": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tally": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "result": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.dataset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Dataset"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataset": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.route": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Routes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "route": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "road": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "path": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lane": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "way": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "course": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "itinerary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "track": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.area_rank": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "area_rank"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area rank": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "area_rank": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "region rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "locale rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "locality rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "neighbourhood rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "district rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "continent rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "field rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "neighborhood rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "section rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "space rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.loc_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "loc_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loc id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loc_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loc identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.custom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Custom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "custom": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tradition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "convention": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "institution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "practice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "routine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "habit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ritual": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pattern": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "way": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.objectid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "OBJECTID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "objectid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.ID_and_location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "ID and Location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID and location": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id and locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "id and placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "id and scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "id and venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "id locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id and address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "id and place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.selected_location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Selected Location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selected location": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selected locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selected placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selected scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selected venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "selected address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "selected place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.location_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Location_Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Location_Count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "location amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "locality count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "placement count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "scene count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "venue count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "address count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "place count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "position count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "setting count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "site count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.location_count_all": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Location_Count_All"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location count all": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Location_Count_All": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "location amount all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "locality count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "placement count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "scene count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "venue count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "address count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "place count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "position count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "setting count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "site count all": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.locations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "% Locations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% locations": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "% scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "% place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "% position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "% setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.excluded_location_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "Excluded_Location_Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "excluded location count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Excluded_Location_Count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "excluded location amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "excluded locality count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "excluded placement count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "excluded scene count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "excluded venue count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "excluded address count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "excluded place count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "excluded position count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "excluded setting count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "excluded site count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location icons dim": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location icon dim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "location_icons_dim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "icons dim": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "icon dim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "locality icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "placement icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "scene icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "venue icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "address icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "place icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "position icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "setting icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "site icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "spot icon dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
 			          "ConceptualProperty": "Category"
 			        }
 			      },
@@ -735,22 +2721,22 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood": {
+			    "location_icons_dim.icon": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "nyc_locations_fact",
-			          "ConceptualProperty": "NTAName"
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Icon"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "neighborhood": {
+			          "icon": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "region": {
+			          "likeness": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -760,7 +2746,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "locality": {
+			          "representation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -770,7 +2756,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "vicinity": {
+			          "portrait": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -780,7 +2766,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "proximity": {
+			          "emblem": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -790,7 +2776,17 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "district": {
+			          "logo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sign": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -800,7 +2796,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "zone": {
+			          "photograph": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -810,7 +2806,1091 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "community": {
+			          "drawing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "picture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "symbol": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.author": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Author"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "author": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "writer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "creator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "journalist": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "novelist": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "poet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.license": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "License"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "license": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "authorization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "certificate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "warrant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ticket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "immoderation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "lawlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "unrestraint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "intemperance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.collection": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Collection"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "collection": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assortment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "assembly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "assemblage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gathering": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pool": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "throng": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "compendium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "compilation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "corpus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.legend_icon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Legend Icon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "legend icon": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "legend likeness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "legend representation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "legend portrait": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "legend emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "legend logo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "legend image": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "legend sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "legend photograph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "legend drawing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "legend picture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Icon": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.legend_button_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Legend Button Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "legend button label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "button label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "legend button sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "button sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "legend button tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "legend button decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "button tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "button decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "legend button name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
+			    },
+			    "interests_dim": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "interests_dim"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "interests dim": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "interest dim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "interests_dim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "faint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "interests_dim.loc_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "interests_dim",
+			          "ConceptualProperty": "loc_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "loc id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loc_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loc identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loc credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "interests_dim.loc_interest_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "interests_dim",
+			          "ConceptualProperty": "loc_interest_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loc interest id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loc_interest_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loc interest identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "loc interest identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "loc interest identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "loc interest credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "interests_dim.interest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "interests_dim",
+			          "ConceptualProperty": "interest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "interest": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "attention": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "curiosity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "awareness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "attentiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "notice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "concern": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "relevance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact.image": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "nyc_locations_fact",
+			          "ConceptualProperty": "image"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "image": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "doppelgänger": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "copy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "twin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "double": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "duplicate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "persona": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "aura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "semblance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "location_icons_dim.link": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "location_icons_dim",
+			          "ConceptualProperty": "Link"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "link": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "connection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "association": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "linkage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "nexus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tie": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bond": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "yoke": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -823,53 +3903,73 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_month": {
+			    "nyc_locations_fact_has_location_icons_dim": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month"
-			          }
+			            "Entity": "location_icons_dim"
+			          },
+			          "Nouns": [
+			            {
+			              "category": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.month"
+			              "Role": "location_icons_dim"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "desig_date_hierarchies_have_desig_months"
+			          "ID": "nyc_locations_facts_have_location_icons_dims"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "location_icons_dim"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "location_icons_dims_have_nyc_locations_facts"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_quarter": {
+			    "location_icons_dim_has_link": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter": {
+			        "location_icons_dim.link": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter"
+			            "Entity": "location_icons_dim.link"
 			          }
 			        }
 			      },
@@ -877,32 +3977,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.quarter"
+			              "Role": "location_icons_dim.link"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "desig_date_hierarchies_have_desig_quarters"
+			          "ID": "location_icons_dims_have_links"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_year": {
+			    "nyc_locations_fact_has_image": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year": {
+			        "nyc_locations_fact.image": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year"
+			            "Entity": "nyc_locations_fact.image"
 			          }
 			        }
 			      },
@@ -910,32 +4010,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.year"
+			              "Role": "nyc_locations_fact.image"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "desig_date_hierarchies_have_desig_years"
+			          "ID": "nyc_locations_facts_have_images"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_has_date_hierarchy": {
+			    "interests_dim_has_interest": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "interests_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date": {
+			        "interests_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			            "Entity": "interests_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			        "interests_dim.interest": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            "Entity": "interests_dim.interest"
 			          }
 			        }
 			      },
@@ -943,32 +4043,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
+			              "Role": "interests_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			              "Role": "interests_dim.interest"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "desig_dates_have_desig_date_hierarchies"
+			          "ID": "interests_dims_have_interests"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_inverse_popularity": {
+			    "interests_dim_has_loc_interest_id": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "interests_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "interests_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "interests_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity": {
+			        "interests_dim.loc_interest_id": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity"
+			            "Entity": "interests_dim.loc_interest_id"
 			          }
 			        }
 			      },
@@ -976,32 +4076,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "interests_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.inverse_popularity"
+			              "Role": "interests_dim.loc_interest_id"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_inverse_popularities"
+			          "ID": "interests_dims_have_loc_interest_ids"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_popularity_tier1": {
+			    "location_icons_dim_has_legend_button_label": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1": {
+			        "location_icons_dim.legend_button_label": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1"
+			            "Entity": "location_icons_dim.legend_button_label"
 			          }
 			        }
 			      },
@@ -1009,32 +4109,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier1"
+			              "Role": "location_icons_dim.legend_button_label"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_popularity_tiers"
+			          "ID": "location_icons_dims_have_legend_button_label"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_popularity_tier": {
+			    "location_icons_dim_has_legend_icon": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier": {
+			        "location_icons_dim.legend_icon": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier"
+			            "Entity": "location_icons_dim.legend_icon"
 			          }
 			        }
 			      },
@@ -1042,32 +4142,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.popularity_tier"
+			              "Role": "location_icons_dim.legend_icon"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_popularity_tiers1"
+			          "ID": "location_icons_dims_have_legend_icon"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_neighborhood": {
+			    "location_icons_dim_has_collection": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood": {
+			        "location_icons_dim.collection": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood"
+			            "Entity": "location_icons_dim.collection"
 			          }
 			        }
 			      },
@@ -1075,32 +4175,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.neighborhood"
+			              "Role": "location_icons_dim.collection"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_neighborhoods"
+			          "ID": "location_icons_dims_have_collections"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_category": {
+			    "location_icons_dim_has_license": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.category": {
+			        "location_icons_dim.license": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.category"
+			            "Entity": "location_icons_dim.license"
 			          }
 			        }
 			      },
@@ -1108,32 +4208,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.category"
+			              "Role": "location_icons_dim.license"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_categories"
+			          "ID": "location_icons_dims_have_licenses"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_shape_area": {
+			    "location_icons_dim_has_author": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "location_icons_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "location_icons_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area": {
+			        "location_icons_dim.author": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			            "Entity": "location_icons_dim.author"
 			          }
 			        }
 			      },
@@ -1141,20 +4241,614 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "location_icons_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			              "Role": "location_icons_dim.author"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_shape_areas"
+			          "ID": "location_icons_dims_have_authors"
+			        }
+			      ]
+			    },
+			    "location_icons_dim_has_icon": {
+			      "Binding": {
+			        "ConceptualEntity": "location_icons_dim"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "location_icons_dim": {
+			          "Target": {
+			            "Entity": "location_icons_dim"
+			          }
+			        },
+			        "location_icons_dim.icon": {
+			          "Target": {
+			            "Entity": "location_icons_dim.icon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "location_icons_dim"
+			            },
+			            "Object": {
+			              "Role": "location_icons_dim.icon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "location_icons_dims_have_icons"
+			        }
+			      ]
+			    },
+			    "location_icons_dim_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "location_icons_dim"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "location_icons_dim": {
+			          "Target": {
+			            "Entity": "location_icons_dim"
+			          }
+			        },
+			        "location_icons_dim.category": {
+			          "Target": {
+			            "Entity": "location_icons_dim.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "location_icons_dim"
+			            },
+			            "Object": {
+			              "Role": "location_icons_dim.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "location_icons_dims_have_categories"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_excluded_location_count": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.excluded_location_count": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.excluded_location_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.excluded_location_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_excluded_location_count"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_locations": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.locations": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.locations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.locations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have__locations"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_location_count_all": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.location_count_all": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.location_count_all"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.location_count_all"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_location_count_all"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_location_count": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.location_count": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.location_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.location_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_location_count"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_selected_location": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.selected_location": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.selected_location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.selected_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_selected_location"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_ID_and_location": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.ID_and_location": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.ID_and_location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.ID_and_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_ID_and_locations"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_objectid": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.objectid": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.objectid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.objectid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_objectids"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_custom": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.custom": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.custom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.custom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_customs"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_loc_id": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.loc_id": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.loc_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.loc_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_loc_ids"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_area_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.area_rank": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.area_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.area_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_area_ranks"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_route": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.route": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.route"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.route"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_routes"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_dataset": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.dataset": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.dataset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_datasets"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_score": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.score": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_scores"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_pageview": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.pageview": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.pageview"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.pageview"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_pageviews"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_NTA_name": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.NTA_name": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.NTA_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.NTA_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_NTA_names"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_has_shape_area": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.shape_area": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.shape_area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "nyc_locations_fact.shape_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_shape_areas"
 			        },
 			        {
 			          "Adjective": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Adjectives": [
 			              {
@@ -1176,29 +4870,29 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Measurement": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_area"
+			              "Role": "nyc_locations_fact.shape_area"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "shape_area_indicates_how_large_enhanced_NYC_landmarks_data_with_popularity_tiers_are"
+			          "ID": "shape_area_indicates_how_large_nyc_locations_facts_are"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_shape_leng": {
+			    "nyc_locations_fact_has_longitude": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng": {
+			        "nyc_locations_fact.longitude": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng"
+			            "Entity": "nyc_locations_fact.longitude"
 			          }
 			        }
 			      },
@@ -1206,32 +4900,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.shape_leng"
+			              "Role": "nyc_locations_fact.longitude"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_shape_lengs"
+			          "ID": "nyc_locations_facts_have_longitudes"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_nta_2020": {
+			    "nyc_locations_fact_has_latitude": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020": {
+			        "nyc_locations_fact.latitude": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020"
+			            "Entity": "nyc_locations_fact.latitude"
 			          }
 			        }
 			      },
@@ -1239,32 +4933,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.nta_2020"
+			              "Role": "nyc_locations_fact.latitude"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_nta_2020"
+			          "ID": "nyc_locations_facts_have_latitudes"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_bct_2020": {
+			    "nyc_locations_fact_has_location_name": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020": {
+			        "nyc_locations_fact.location_name": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020"
+			            "Entity": "nyc_locations_fact.location_name"
 			          }
 			        }
 			      },
@@ -1272,32 +4966,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.bct_2020"
+			              "Role": "nyc_locations_fact.location_name"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_bct_2020"
+			          "ID": "nyc_locations_facts_have_location_names"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_longitude": {
+			    "nyc_locations_fact_has_type": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude": {
+			        "nyc_locations_fact.type": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude"
+			            "Entity": "nyc_locations_fact.type"
 			          }
 			        }
 			      },
@@ -1305,32 +4999,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.longitude"
+			              "Role": "nyc_locations_fact.type"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_longitudes"
+			          "ID": "nyc_locations_facts_have_types"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_latitude": {
+			    "nyc_locations_fact_has_wiki_title": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude": {
+			        "nyc_locations_fact.wiki_title": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude"
+			            "Entity": "nyc_locations_fact.wiki_title"
 			          }
 			        }
 			      },
@@ -1338,32 +5032,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.latitude"
+			              "Role": "nyc_locations_fact.wiki_title"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_latitudes"
+			          "ID": "nyc_locations_facts_have_wiki_titles"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_council": {
+			    "nyc_locations_fact_has_wiki_url": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.council": {
+			        "nyc_locations_fact.wiki_url": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.council"
+			            "Entity": "nyc_locations_fact.wiki_url"
 			          }
 			        }
 			      },
@@ -1371,32 +5065,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.council"
+			              "Role": "nyc_locations_fact.wiki_url"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_councils"
+			          "ID": "nyc_locations_facts_have_wiki_urls"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_cd": {
+			    "nyc_locations_fact_has_confidence": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.cd": {
+			        "nyc_locations_fact.confidence": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.cd"
+			            "Entity": "nyc_locations_fact.confidence"
 			          }
 			        }
 			      },
@@ -1404,32 +5098,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.cd"
+			              "Role": "nyc_locations_fact.confidence"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_cd"
+			          "ID": "nyc_locations_facts_have_confidences"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_report_url": {
+			    "nyc_locations_fact_has_borough": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url": {
+			        "nyc_locations_fact.borough": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url"
+			            "Entity": "nyc_locations_fact.borough"
 			          }
 			        }
 			      },
@@ -1437,474 +5131,45 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "nyc_locations_fact"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.report_url"
+			              "Role": "nyc_locations_fact.borough"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_report_urls"
+			          "ID": "nyc_locations_facts_have_boroughs"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_type": {
+			    "interests_dim_in_nyc_locations_fact": {
 			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
+			        "ConceptualEntity": "interests_dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
+			        "interests_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			            "Entity": "interests_dim"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_types"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_desig_date": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_desig_dates"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_name_2": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_name_2"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_site_status": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_status"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_site_statuses"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_site_desc": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.site_desc"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_site_descs"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lp_number": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lp_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lp_numbers"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lm_name": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lm_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lm_names"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_bbl": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.bbl"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_bbls"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_desig_address": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_desig_addresses"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_lot": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.lot": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.lot"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.lot"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_lots"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_block": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.block": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.block"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.block"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_blocks"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_borough": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.borough": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.borough"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.borough"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_boroughs"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_has_objectid": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			            },
-			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.objectid"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_have_objectids"
-			        }
-			      ]
-			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_in_desig_address": {
-			      "Binding": {
-			        "ConceptualEntity": "nyc_locations_fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers"
-			          }
-			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address": {
-			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        }
 			      },
 			      "SemanticSlots": {
 			        "Where": {
-			          "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			          "Role": "nyc_locations_fact"
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers"
+			              "Role": "interests_dim"
 			            },
 			            "Prepositions": [
 			              {
@@ -1914,29 +5179,209 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_address"
+			              "Role": "nyc_locations_fact"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "enhanced_NYC_landmarks_data_with_popularity_tiers_are_in_desig_addresses"
+			          "ID": "interests_dims_are_in_nyc_locations_facts"
 			        }
 			      ]
 			    },
-			    "enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_date_hierarchy_has_enhanced_NYC_landmarks_data_with_popularity_tiers_desig_date_day": {
+			    "nyc_locations_fact_in_location_icons_dim": {
 			      "Binding": {
 			        "ConceptualEntity": "nyc_locations_fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy": {
+			        "nyc_locations_fact": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			            "Entity": "nyc_locations_fact"
 			          }
 			        },
-			        "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day": {
+			        "location_icons_dim": {
 			          "Target": {
-			            "Entity": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day"
+			            "Entity": "location_icons_dim"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "location_icons_dim"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "location_icons_dim"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_are_in_location_icons_dims"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_in_selected_location": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.selected_location": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.selected_location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "nyc_locations_fact.selected_location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "nyc_locations_fact.selected_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_are_in_selected_location"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_in_ID_and_location": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.ID_and_location": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.ID_and_location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "nyc_locations_fact.ID_and_location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "nyc_locations_fact.ID_and_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_are_in_ID_and_locations"
+			        }
+			      ]
+			    },
+			    "nyc_locations_fact_in_location_name": {
+			      "Binding": {
+			        "ConceptualEntity": "nyc_locations_fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
+			          }
+			        },
+			        "nyc_locations_fact.location_name": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact.location_name"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "nyc_locations_fact.location_name"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "nyc_locations_fact.location_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_are_in_location_names"
+			        }
+			      ]
+			    },
+			    "interests_dim_has_nyc_locations_fact": {
+			      "Binding": {
+			        "ConceptualEntity": "interests_dim"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "interests_dim": {
+			          "Target": {
+			            "Entity": "interests_dim"
+			          }
+			        },
+			        "nyc_locations_fact": {
+			          "Target": {
+			            "Entity": "nyc_locations_fact"
 			          }
 			        }
 			      },
@@ -1944,15 +5389,28 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.date_hierarchy"
+			              "Role": "interests_dim"
 			            },
 			            "Object": {
-			              "Role": "enhanced_NYC_landmarks_data_with_popularity_tiers.desig_date.day"
+			              "Role": "nyc_locations_fact"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "desig_date_hierarchies_have_desig_days"
+			          "ID": "interests_dims_have_nyc_locations_facts"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nyc_locations_fact"
+			            },
+			            "Object": {
+			              "Role": "interests_dim"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nyc_locations_facts_have_interests_dims"
 			        }
 			      ]
 			    }

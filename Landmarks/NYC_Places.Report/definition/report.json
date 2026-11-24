@@ -70,13 +70,33 @@
           "type": "ShapeMap"
         },
         {
+          "name": "back_arrow4487666116400516.png",
+          "path": "back_arrow4487666116400516.png",
+          "type": "Image"
+        },
+        {
           "name": "Custom8035549735534064.json",
           "path": "Custom8035549735534064.json",
           "type": "CustomTheme"
         },
         {
-          "name": "spiderman_background2959099721396553.jpg",
-          "path": "spiderman_background2959099721396553.jpg",
+          "name": "github_logo18549569453653492.png",
+          "path": "github_logo18549569453653492.png",
+          "type": "Image"
+        },
+        {
+          "name": "linkedin_logo45210540377355257.png",
+          "path": "linkedin_logo45210540377355257.png",
+          "type": "Image"
+        },
+        {
+          "name": "portfolio_palette20271215164890455.png",
+          "path": "portfolio_palette20271215164890455.png",
+          "type": "Image"
+        },
+        {
+          "name": "references_book40042309300926693.png",
+          "path": "references_book40042309300926693.png",
           "type": "Image"
         }
       ]

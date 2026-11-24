@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "aad5b26500981e02c206",
   "position": {
     "x": 0,
-    "y": 82.959027823892683,
-    "z": 0,
-    "height": 577.99322664187525,
-    "width": 1279.7450029882461,
+    "y": 83.166252500151515,
+    "z": 1000,
+    "height": 619.40238802351655,
+    "width": 1279.7672586217345,
     "tabOrder": 0
   },
   "visual": {
@@ -23,35 +23,12 @@
                       "Entity": "nyc_locations_fact"
                     }
                   },
-                  "Property": "loc_id"
+                  "Property": "ID and Location"
                 }
               },
-              "queryRef": "nyc_locations_fact.loc_id",
-              "nativeQueryRef": "loc_id",
+              "queryRef": "nyc_locations_fact.ID and Location",
+              "nativeQueryRef": "ID and Location",
               "active": true
-            }
-          ]
-        },
-        "Size": {
-          "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "nyc_locations_fact"
-                        }
-                      },
-                      "Property": "area_rank"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Sum(nyc_locations_fact.area_rank)",
-              "nativeQueryRef": "Min of area_rank"
             }
           ]
         },
@@ -171,21 +148,21 @@
             "zoom": {
               "expr": {
                 "Literal": {
-                  "Value": "14.54D"
+                  "Value": "9.48D"
                 }
               }
             },
             "centerLatitude": {
               "expr": {
                 "Literal": {
-                  "Value": "40.83114045531883D"
+                  "Value": "40.70819050817681D"
                 }
               }
             },
             "centerLongitude": {
               "expr": {
                 "Literal": {
-                  "Value": "-73.93658538856806D"
+                  "Value": "-73.98918744999997D"
                 }
               }
             },
@@ -199,14 +176,14 @@
             "pitch": {
               "expr": {
                 "Literal": {
-                  "Value": "60D"
+                  "Value": "0D"
                 }
               }
             },
             "heading": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "0D"
                 }
               }
             },
@@ -545,6 +522,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Map Labels On'"
+                }
+              }
             }
           }
         }
@@ -609,5 +593,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

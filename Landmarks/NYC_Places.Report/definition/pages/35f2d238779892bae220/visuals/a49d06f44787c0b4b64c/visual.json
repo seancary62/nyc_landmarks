@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "a49d06f44787c0b4b64c",
   "position": {
     "x": 0,
     "y": 0,
-    "z": 1000,
-    "height": 82.959027823892683,
-    "width": 259.75695597317218,
-    "tabOrder": 2000
+    "z": 5000,
+    "height": 83.2444037177641,
+    "width": 901.21115329231566,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "shape",
@@ -63,6 +63,53 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
           }
         }
       ]

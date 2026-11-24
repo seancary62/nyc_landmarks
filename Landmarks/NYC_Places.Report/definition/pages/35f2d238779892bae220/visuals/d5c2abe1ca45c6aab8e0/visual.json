@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "d5c2abe1ca45c6aab8e0",
   "position": {
     "x": 25.335253305406464,
     "y": 149.59863856525723,
-    "z": 2000,
-    "height": 476.25463809996063,
-    "width": 494.46437426260621,
-    "tabOrder": 4000
+    "z": 7000,
+    "height": 476.54405026835968,
+    "width": 464.47964393245184,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -15,6 +15,21 @@
       "queryState": {
         "Values": {
           "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "location_icons_dim"
+                    }
+                  },
+                  "Property": "Legend Icon"
+                }
+              },
+              "queryRef": "location_icons_dim.Legend Icon",
+              "nativeQueryRef": "Icon",
+              "displayName": "Icon"
+            },
             {
               "field": {
                 "Column": {
@@ -45,7 +60,7 @@
                 "Property": "Location Name"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -191,6 +206,13 @@
                   "Value": "9D"
                 }
               }
+            },
+            "imageHeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "25D"
+                }
+              }
             }
           }
         }
@@ -226,7 +248,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "453.69948098755003D"
+                  "Value": "402.994069325764D"
                 }
               }
             }
@@ -321,6 +343,60 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showFilterRestatementButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showTooltipButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showSetAlertButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'1f581167c2914d80ce8a'"
                 }
               }
             }

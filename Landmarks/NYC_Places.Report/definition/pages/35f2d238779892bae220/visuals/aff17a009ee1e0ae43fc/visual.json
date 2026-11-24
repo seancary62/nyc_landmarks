@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "aff17a009ee1e0ae43fc",
   "position": {
-    "x": 869.02981605684306,
+    "x": 901.21115329231566,
     "y": 0,
-    "z": 10000,
-    "height": 82.959027823892683,
-    "width": 134.63842220598977,
-    "tabOrder": 9005
+    "z": 14000,
+    "height": 83.2444037177641,
+    "width": 161.66304490116505,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "nyc_locations_fact"
                     }
                   },
-                  "Property": "% Locations"
+                  "Property": "Location_Count"
                 }
               },
-              "queryRef": "nyc_locations_fact.% Locations",
-              "nativeQueryRef": "% Locations"
+              "queryRef": "nyc_locations_fact.Location_Count",
+              "nativeQueryRef": "Location_Count"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "nyc_locations_fact"
                   }
                 },
-                "Property": "% Locations"
+                "Property": "Location_Count"
               }
             },
             "direction": "Descending"
@@ -161,10 +161,68 @@
                   }
                 }
               }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
             }
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "33D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "nyc_locations_fact.Location_Count"
+          }
+        }
+      ],
+      "cardCalloutArea": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "nyc_locations_fact.Location_Count"
           }
         }
       ]
@@ -223,6 +281,13 @@
                   }
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
             }
           }
         }
@@ -260,9 +325,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.2
+                    "Literal": {
+                      "Value": "'#223057'"
                     }
                   }
                 }
@@ -272,6 +336,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

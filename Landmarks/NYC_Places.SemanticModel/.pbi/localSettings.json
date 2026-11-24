@@ -1,5 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/localSettings/1.2.0/schema.json",
   "userConsent": {},
-  "securityBindingsSignature": "AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8+rCUM1JEKpC7ZiD2X6KAAAAAACAAAAAAAQZgAAAAEAACAAAAD24Xb27Lm87xpmob1tIinsCbHHnAhhezByRp9xmUdtEgAAAAAOgAAAAAIAACAAAABdxCjtPqy+gIe+1KFcSzEil9JVZRdgc3SuzI5FaWbns1AAAAA2TszdmzVlb9CcBLFciwM3GdvjzcSa5dHouWBZou5zxCqiD3zc58bq9OYVcr8uEAe2thG2XN6yHaBt1XTxDYTig7lXocj5q5KVQNdOAjwUCkAAAAAIp6PjpcYVgb2j7NUsBGCQDxTfViGrVDrCAsc4sG6pENtwkZYkDSXKiRcAsaeh5QEQG651EukZUal4Sfy8Zi9B"
+  "remoteArtifacts": [
+    {
+      "datasetId": "eb306292-a35d-4bd1-b320-e5fb10055203"
+    }
+  ],
+  "securityBindingsSignature": "AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhpH9Xrxlv0KAmmpJht8JhAAAAAACAAAAAAAQZgAAAAEAACAAAACrNMoqiQll/VNLslch0F1W+ZPn4A3mMd2Fy9XHJ7E2rgAAAAAOgAAAAAIAACAAAAAvtGX1bzQv3NBiY28SEDNbHLVQwpyVX+80R3XG5Yc8OlAAAAAwb8pZfu16WsOhWDmm1JvaFc9VRlSGbmVt2S6H8G7Hz9REr2nyYn8B3iOuJok3ZyfQ3Md8VuZAUKnxnBaXAEn5Q0wfcw2+xDsFBp3xLPBqaUAAAABB0NFeexHI58FH1Nuy75Oh8xD72zABgZcnlV9G1wfINXJrq/EPFMRK1ciut6isal5QJ00sZHfVxZbKtr01nvLT"
 }

@@ -27,9 +27,8 @@ table nyc_locations_fact
 		lineageTag: 87b8e573-64cb-4f36-bf2b-0beaa7a3b110
 
 	measure '% Locations' = DIVIDE([Location_Count], [Location_Count_All],0)
+		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: e0da925c-9bc7-41ed-b82a-cfa1eac7f4b4
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure Excluded_Location_Count = [Location_Count_All] - [Location_Count]
 		formatString: 0
@@ -192,6 +191,33 @@ table nyc_locations_fact
 
 		annotation SummarizationSetBy = Automatic
 
+	column OBJECTID
+		dataType: double
+		lineageTag: bb9b86b4-48f7-442a-9be1-ccd0507c643a
+		summarizeBy: count
+		sourceColumn: OBJECTID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ID and Location'
+		dataType: string
+		lineageTag: a1ce57cb-44f6-47bf-afee-b725b3a02ae8
+		summarizeBy: none
+		sourceColumn: ID and Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column image
+		dataType: string
+		lineageTag: 03875620-3850-48f9-a999-4553a181b33b
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: image
+
+		annotation SummarizationSetBy = Automatic
+
 	partition nyc_locations_fact = m
 		mode: import
 		source =
@@ -206,9 +232,11 @@ table nyc_locations_fact
 				  #"Replaced value 2" = Table.ReplaceValue(#"Replaced value 1", "QN", "Queens", Replacer.ReplaceText, {"Borough"}),
 				  #"Replaced value 3" = Table.ReplaceValue(#"Replaced value 2", "BX", "Bronx", Replacer.ReplaceText, {"Borough"}),
 				  #"Replaced value 4" = Table.ReplaceValue(#"Replaced value 3", "SI", "Staten Island", Replacer.ReplaceText, {"Borough"}),
-				  #"Inserted conditional column 1" = Table.AddColumn(#"Replaced value 4", "Custom", each if [confidence] = "low" then null else [wiki_url])
+				  #"Inserted conditional column 1" = Table.AddColumn(#"Replaced value 4", "Custom", each if [confidence] = "low" then null else [wiki_url]),
+				  #"Filtered rows" = Table.SelectRows(#"Inserted conditional column 1", each ([OBJECTID] <> null)),
+				  #"Inserted merged column" = Table.AddColumn(#"Filtered rows", "ID and Location", each Text.Combine({Text.From([OBJECTID]), [Location Name]}, " - "), type text)
 				in
-				  #"Inserted conditional column 1"
+				  #"Inserted merged column"
 
 	annotation PBI_NavigationStepName = Navigation
 

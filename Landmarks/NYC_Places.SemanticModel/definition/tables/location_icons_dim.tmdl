@@ -53,11 +53,22 @@ table location_icons_dim
 
 		annotation SummarizationSetBy = Automatic
 
+	/// Source collection page for the icon
+	column Link =
+			SWITCH ( location_icons_dim[Collection],
+			    "Architecture Building Line Vectors", "https://www.svgrepo.com/collection/architecture-building-line-vectors/",
+			    "Travel And Places Infographic Icons", "https://www.svgrepo.com/collection/travel-and-places-infographic-icons/",
+			    "Farm Glyhps Icons", "https://www.svgrepo.com/collection/farm-glyhps-icons/",
+			    "Line Awesome", "https://www.svgrepo.com/collection/line-awesome/"
+			)
+		dataType: string
+		lineageTag: c9d0f79a-ec7b-4cac-9258-ba85bf04211f
+
 	partition location_icons_dim = m
 		mode: import
 		source =
 				let
-				  Source = Excel.Workbook(File.Contents("C:\Users\seanc\Documents\fuck_onedrive_projects\nyc_landmarks\Landmarks\source_files\nyc_landmarks_logos.xlsx"), null, true),
+				  Source = Excel.Workbook(File.Contents("C:\Users\seanc\Documents\data_projects\nyc_landmarks\Landmarks\source_files\nyc_landmarks_logos.xlsx"), null, true),
 				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
 				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
 				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed column type", [PromoteAllScalars=true]),

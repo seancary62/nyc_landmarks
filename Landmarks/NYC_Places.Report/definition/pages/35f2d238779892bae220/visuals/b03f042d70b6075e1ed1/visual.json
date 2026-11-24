@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "b03f042d70b6075e1ed1",
   "position": {
-    "x": 10,
-    "y": 14.321199143468951,
+    "x": 16,
+    "y": 10.5,
     "z": 1000,
-    "height": 74.922476364565952,
-    "width": 280
+    "height": 75,
+    "width": 300,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -41,8 +42,9 @@
                 }
               },
               "queryRef": "nyc_locations.Neighborhood",
-              "nativeQueryRef": "NTAName",
-              "active": true
+              "nativeQueryRef": "Neighborhood",
+              "active": true,
+              "displayName": "Neighborhood"
             }
           ]
         }
@@ -92,16 +94,6 @@
                 }
               ],
               "isToggled": true
-            },
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'Manhattan'"
-                  }
-                }
-              ],
-              "isToggled": true
             }
           ]
         }
@@ -136,7 +128,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#04C4FC'"
                     }
                   }
                 }
@@ -147,8 +139,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
+                      "ColorId": 1,
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -184,7 +176,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#04C4FC'"
                     }
                   }
                 }

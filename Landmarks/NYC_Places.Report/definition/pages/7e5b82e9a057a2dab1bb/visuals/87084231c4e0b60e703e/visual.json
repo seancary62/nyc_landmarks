@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "87084231c4e0b60e703e",
+  "position": {
+    "x": 35,
+    "y": 144,
+    "z": 12000,
+    "height": 160,
+    "width": 565,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "City of New York, Department of City Planning. (2026). 2020 Neighborhood Tabulation Areas (NTAs) [Data set]. NYC Open Data. Retrieved September 26, 2026, from https://data.cityofnewyork.us/d/9nt8-h7nd",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "11pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "NYC Landmarks Preservation Commission. (2026). Individual Landmark Sites [Data set]. NYC Open Data. Retrieved July 25, 2026, from https://data.cityofnewyork.us/d/buis-pvji",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "11pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
